@@ -1,0 +1,27 @@
+{%- extends "base.html" %}
+{% import "bootstrap/utils.html" as utils %}
+{% include "header.html" %}
+		{% block content %}
+		<div class="container">
+			<h1>{{category.name}}</h1>
+			<br>
+			<h2>Below Is A List of Our Current {{category.name}} Items:</h2>
+				{% with messages = get_flashed_messages(with_categories=True) %}
+			{% if messages %}
+				<div class="row">
+					<div class="col-md-12">
+						{{utils.flashed_messages(messages)}}
+					</div>
+				</div>
+				{% endif %}
+			{% endwith %}
+
+			{% for i in items %}
+
+			<h3>{{i.name}}</h3>
+
+			<p>{{i.description}}</p>
+
+			{% endfor %}
+		</div>
+		{% endblock %}

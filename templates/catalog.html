@@ -1,0 +1,45 @@
+{%- extends "base.html" %}
+{% import "bootstrap/utils.html" as utils %}
+{% include "header.html" %}
+		{% block content %}
+		<div class="container">
+			<div class="row">
+				{% with messages = get_flashed_messages(with_categories=True) %}
+					{% if messages %}
+					<div class="col-md-12">
+						{{utils.flashed_messages(messages)}}
+					</div>
+					{% endif %}
+				{% endwith %}
+				<div class="col-sm-8">
+					<h1>Welcome to our Catalog!</h1>
+					<a href="{{ url_for('new_category') }}">Create A New Category!</a>
+					<br>
+					<h2>Below Is A List of Our Current Catalog Items:</h2>
+					{% for category in category %}
+						<h2>{{category.name}}</h2>
+						<a href="{{ url_for('category_items', category_id=category.id)}}">View Category Details</a>
+						<br>
+						<a href="{{ url_for('edit_category',
+						category_id=category.id) }}">Edit Category Name</a>
+						<br>
+						<a href="{{ url_for('delete_category',
+						category_id=category.id) }}">Delete This Category</a>
+						<br>
+						{% endfor %}
+				</div>
+				<div class="col-sm-4">
+					<div class="well sidebar-nav">
+						<h2>Latest Catalog Items:</h2>
+
+						{% for i in items %}
+
+						<p><strong>{{i.name}}</strong></p>
+
+						<!-- <p>{{i.description}}</p> -->
+					{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endblock %}

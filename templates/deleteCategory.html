@@ -1,0 +1,14 @@
+{%- extends "base.html" %}
+{% import "bootstrap/utils.html" as utils %}
+{% include "header.html" %} content %}
+		{% block content %}
+		<div class="container">
+			<h1>Are you sure you want to delete {{category.name}}?</h1>
+
+				<form class="" action="{{ url_for('delete_category', category_id=category.id) }}" method="post">
+
+					<input type="submit" name="" value="Delete">
+				<a href="{{url_for('categories_home')}}">Cancel</a>
+				</form>
+		</div>
+		{% endblock %}
