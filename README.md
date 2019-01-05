@@ -1,6 +1,6 @@
-# Udacity_FSND_Project_Four: Linux Server Configuration
+# Udacity_FSND_Project_Three: Linux Server Configuration
 
-### This is project number four from the Udacity Full Stack Web Developer Nanodegree Program
+### This is project number three from the Udacity Full Stack Web Developer Nanodegree Program
 ## Project overview:
 * Take a baseline installation of a Linux server and prepare it to host your web applications. You will secure your server from a number of attack vectors, install and configure a database server, and deploy one of your existing web applications onto it.
 
@@ -8,11 +8,11 @@
 * To obtain a deep understanding of exactly what your web applications are doing, how they are hosted, and the interactions between multiple systems are what define you as a Full Stack Web Developer. In this project, you’ll be responsible for turning a brand-new, bare bones, Linux server into the secure and efficient web application host your applications need.
 
 ## Aside:
-***This was a very challenging and frustrating experience completing this project and as such I wanted this README to act
+***For me, completing this project was a very challenging and frustrating experience. As such, I additionally wanted this README to act
 as sort of a guide for anyone that may come across it. I have been successfully building and deploying LAMP 
-and LEMP servers (not with Flask) for a few years now and have not faced the same amount of challenges and failures 
-since building my first public facing web server. That being said, upon successfully working through all of these 
-challenges and finally launching the Project 3 Flask Catalog app successfully, I was very proud of my success and 
+and LEMP servers (as a non-professional, and not with Flask) for a few years now and have not faced the same amount of challenges and failures 
+since building my first few public facing web servers. That being said, upon successfully working through all of these 
+challenges and finally launching the Project 2 Flask Catalog app successfully, I was very proud of my success and 
 learned a TON along the way. So if anyone is viewing this project on GitHub and is at their wits end...please don't 
 give up! Specifically, the OAuth portion of the Flask app caused significant headaches (due mostly to my lack of 
 understanding of the intricacies of the software) and the uWSGI portion of serving my Flask app (this led to hours 
