@@ -243,9 +243,9 @@ GRANT
 catalog=\q
 postgres@wickkwired:~$ exit
 ```
-# Note: These next step utilize the following Digital Ocean guides pretty much to a "T":
+# Note: These next steps utilize the following Digital Ocean guides pretty much to a "T":
 * [Digital Ocean: How To Install Nginx on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04)
-* [Digital Ocean: How To Serve Flask Applications with uWSGI and Nginx on Ubuntu 18.04](How To Serve Flask Applications with uWSGI and Nginx on Ubuntu 18.04)
+* [Digital Ocean: How To Serve Flask Applications with uWSGI and Nginx on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04)
 
 ## Step 8: Install Nginx:
 ```bash
@@ -366,8 +366,9 @@ app = Flask(__name__)
 app.config['SESSION_TYPE'] = 'memcached'
 app.config['SECRET_KEY'] = 'super_secret_key'
 ```
-* This is the stackoverflow entry that solved my issue:
-* [stackoverflow: secret key not set in flask session, using the Flask-Session extension](https://stackoverflow.com/questions/26080872/secret-key-not-set-in-flask-session-using-the-flask-session-extension)
+***This is the stackoverflow entry that solved my issue:***
+
+[stackoverflow: secret key not set in flask session, using the Flask-Session extension](https://stackoverflow.com/questions/26080872/secret-key-not-set-in-flask-session-using-the-flask-session-extension)
 
 ### The other big trouble spot for me was getting Google OAuth 2.0 to work...
 ***I never did figure out how to get OAuth 2.0 to work without having a valid DNS entry. After hours of changing 
@@ -386,8 +387,10 @@ http://wickkwired.com
 ```
 ### <u>Authorized redirect URIs</u>
 ```bash
+# For dev testing:
 http://wickkwired.com:5000/login
 http://wickkwired.com:5000/gconnect
+# For production:
 http://wickkwired.com/login
 http://wickkwired.com/gconnect
 ```
