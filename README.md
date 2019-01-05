@@ -36,7 +36,7 @@ DNS service for years, I utilized their Name Servers to point my domain name to 
 ## Helpful guides and resources utilized for this project:
 * [Digital Ocean: Ubuntu 18.04 Initial Server Setup Guide](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)
 * [Digital Ocean: How To Install Nginx on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04)
-* [Digital Ocean: How To Serve Flask Applications with uWSGI and Nginx on Ubuntu 18.04](How To Serve Flask Applications with uWSGI and Nginx on Ubuntu 18.04)
+* [Digital Ocean: How To Serve Flask Applications with uWSGI and Nginx on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04)
 * [stackoverflow: secret key not set in flask session, using the Flask-Session extension](https://stackoverflow.com/questions/26080872/secret-key-not-set-in-flask-session-using-the-flask-session-extension)
 
 ## Python Software Requirements 
